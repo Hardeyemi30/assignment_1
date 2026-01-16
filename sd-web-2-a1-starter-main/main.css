@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f4f5f5;
+  padding: 1.25rem;
+}
+
+
+.page-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+
+header {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+
+main section {
+  background-color: #ffffff;
+  margin-bottom: 1.25rem;
+  padding: 1.25rem;
+  border-radius: 8px;
+  border-left: 5px solid #667eea;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0.75rem;
+  color: #333;
+}
+
+h2 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #444;
+}
+
+h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  color: #555;
+}
+
+p {
+  margin-bottom: 0.75rem;
+  color: #555;
+}
+
+.output {
+  background-color: #f8f9fa;
+  border-radius: 6px;
+  padding: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+ul {
+  list-style: none;
+}
+
+section ul li {
+  background-color: #ffffff;
+  padding: 0.6rem 0.75rem;
+  margin-bottom: 0.5rem;
+  border-left: 4px solid #28a745;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  color: black;
+}
+
+ul li:hover {
+  transform: translateX(4px);
+}
+
+#error-messages p,
+#broken-array-errors p {
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 0.5rem 0.75rem;
+  border-radius: 4px;
+  border-left: 4px solid #dc3545;
+  margin-bottom: 0.5rem;
+  font-family: "Courier New", monospace;
+}
+
+article {
+  margin-top: 1rem;
+}
+
+article img {
+  max-width: 100%;
+  border-radius: 6px;
+  margin: 0.75rem 0;
+}
+
+article header p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0.75rem;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
